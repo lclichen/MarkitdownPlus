@@ -1,0 +1,9 @@
+mineru>=3.4.0
+beautifulsoup4
+markitdown[all]>=0.1.6
+markitdown-ocr
+openai
+gradio
+fastapi
+uvicorn
+pydantic
