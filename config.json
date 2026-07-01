@@ -24,9 +24,9 @@
     "device-mode": "cuda",
 
     "vlm_config": {
-        "base_url": "http://172.18.34.89:8888/v1",
-        "api_key": "Empty",
-        "model": "Qwen3.5-35B",
+        "base_url": "http://localhost:1234/v1",
+        "api_key": "sk-xxx",
+        "model": "Qwen3.5-35B-A3B",
         "default_prompt_text": "Extract all text from this image. Return ONLY the extracted text, maintaining the original layout and order. Do not add any commentary or description.",
         "default_prompt_caption": "Write a detailed caption for this image."
     },
