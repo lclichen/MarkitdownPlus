@@ -1,8 +1,8 @@
 # MarkitdownPlus
-基于Markitdown进行一些易用性改进。
+基于 [Markitdown](https://github.com/microsoft/markitdown) 进行一些易用性改进。
 
 主要变更：
-使用MinerU的Excel解析代替原始的pandas.read_excel
+使用 [MinerU](https://github.com/opendatalab/MinerU) 的Excel解析代替原始的`pd.read_excel()`
 输出表格从MinerU的html格式转换为markdown格式，保留原始表格中的各种格式。
 通过Hook修改Markitdown的OCR功能，使其支持图片文件导出、Caption、OCR等多种可选功能。
 
