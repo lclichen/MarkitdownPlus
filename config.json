@@ -1,0 +1,62 @@
+{
+    "bucket_info": {},
+    "latex-delimiter-config": {
+      "display": {
+        "left": "$$",
+        "right": "$$"
+      },
+      "inline": {
+        "left": "$",
+        "right": "$"
+      }
+    },
+    "llm-aided-config": {
+      "title_aided": {
+        "api_key": "your_api_key",
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "model": "qwen3-next-80b-a3b-instruct",
+        "enable_thinking": false,
+        "enable": false
+      }
+    },
+    "config_version": "1.0.0",
+    "offline-mode": true,
+    "device-mode": "cuda",
+
+    "vlm_config": {
+        "base_url": "http://172.18.34.89:8888/v1",
+        "api_key": "Empty",
+        "model": "Qwen3.5-35B",
+        "default_prompt_text": "Extract all text from this image. Return ONLY the extracted text, maintaining the original layout and order. Do not add any commentary or description.",
+        "default_prompt_caption": "Write a detailed caption for this image."
+    },
+
+    "server_config": {
+        "api_host": "0.0.0.0",
+        "api_port": 8000,
+        "webui_port": 7860
+    },
+
+    "task_config": {
+        "retention_seconds": 3600,
+        "cleanup_interval_seconds": 300,
+        "sync_timeout_seconds": 600
+    },
+
+    "directory_config": {
+        "upload_dir": "./uploads_api",
+        "output_dir": "./outputs_api",
+        "webui_output_dir": "./outputs"
+    },
+
+    "image_convert_modes": ["OCR", "Caption", "Origin"],
+
+    "response_formats": ["json", "zip"],
+
+    "supported_formats": [
+        ".pdf", ".pptx", ".ppt", ".docx", ".doc", ".xlsx", ".xls",
+        ".jpg", ".jpeg", ".png", ".gif", ".webp",
+        ".mp3", ".wav",
+        ".html", ".htm", ".txt", ".csv", ".json", ".zip"
+    ]
+}
